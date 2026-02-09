@@ -37,6 +37,12 @@
       "name": "Fransa",
       "priority": 1,
       "dateAdded": "2026-02-09T01:22:01.304Z"
+    },
+    {
+      "code": "GB",
+      "name": "Birleşik Krallık",
+      "priority": 3,
+      "dateAdded": "2026-02-09T01:22:29.577Z"
     }
   ]
 }
