@@ -1,5 +1,12 @@
 {
-  "places": [],
+  "places": [
+    {
+      "name": "Fein",
+      "location": "Kadıköy",
+      "description": "sıcak çikolata",
+      "dateAdded": "2026-02-09T00:54:20.942Z"
+    }
+  ],
   "countries": [
     {
       "code": "AU",
