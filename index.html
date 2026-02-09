@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planlarrr</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Map CSS (Local) -->
+    <link rel="stylesheet" href="jsvectormap.min.css" />
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <!-- Navigation Tabs -->
+            <nav class="main-nav">
+                <button class="nav-btn active" data-target="routes-view">Rotalar</button>
+                <button class="nav-btn" data-target="countries-view">Ülkeler</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- View 1: Routes (Existing) -->
+            <div id="routes-view" class="view-section active">
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2>Gideceğimiz Yerler</h2>
+                        <span class="badge" id="place-count">0 Rota</span>
+                    </div>
+
+                    <div id="loading" class="hidden">
+                        <div class="spinner"></div>
+                        <p>Yükleniyor...</p>
+                    </div>
+                    <div id="error-message" class="hidden"></div>
+
+                    <div id="places-container" class="places-grid">
+                        <!-- Places filled by JS -->
+                    </div>
+
+                    <div id="empty-state" class="hidden">
+                        <div class="empty-icon-bg">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <h3>Henüz Rota Yok</h3>
+                        <p>Aşağıdaki formdan gitmek istediğimiz ilk yeri ekle.</p>
+                    </div>
+                </section>
+
+                <section class="content-section add-section-wrapper">
+                    <div class="card add-form-card">
+                        <div class="card-header">
+                            <h2>Yeni Rota Ekle</h2>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <form id="add-place-form">
+                            <div class="form-group">
+                                <label for="place-name">Yer Adı</label>
+                                <input type="text" id="place-name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="place-location">Konum</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <input type="text" id="place-location" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="place-description">Açıklama</label>
+                                <textarea id="place-description" rows="3" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary">
+                                <span>Listeye Ekle</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+            <!-- View 2: Countries (New) -->
+            <div id="countries-view" class="view-section">
+                <!-- Map Container -->
+                <div class="map-container card">
+                    <div id="world-map" style="width: 100%; height: 300px;"></div>
+                </div>
+
+                <!-- Countries List -->
+                <section class="content-section" style="margin-top: 2rem;">
+                    <div class="section-header">
+                        <h2>Hedef Ülkelerimiz</h2>
+                        <span class="badge" id="country-count">0 Ülke</span>
+                    </div>
+                    <div id="countries-container" class="places-grid">
+                        <!-- Countries filled by JS -->
+                    </div>
+                </section>
+
+                <!-- Add Country Form -->
+                <section class="content-section add-section-wrapper">
+                    <div class="card add-form-card">
+                        <div class="card-header">
+                            <h2>Yeni Ülke Ekle</h2>
+                            <i class="fa-solid fa-flag"></i>
+                        </div>
+                        <form id="add-country-form">
+                            <div class="form-group">
+                                <label for="country-select">Ülke Seç</label>
+                                <select id="country-select" required>
+                                    <option value="">Yükleniyor...</option>
+                                    <!-- Options filled by JS -->
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="country-priority">Öncelik</label>
+                                <select id="country-priority" required>
+                                    <option value="1">1 - Kesin gidelim</option>
+                                    <option value="2">2 - Daha sonra gidelim</option>
+                                    <option value="3" selected>3 - Gidelim</option>
+                                    <option value="4">4 - Bi ara gideriz</option>
+                                    <option value="5">5 - Belki gideriz</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn-primary">
+                                <span>Ülkeyi Ekle</span>
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Map Scripts (Local) -->
+    <script src="jsvectormap.min.js"></script>
+    <script src="world.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
