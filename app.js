@@ -14,7 +14,7 @@ const countrySelect = document.getElementById('country-select');
 
 // Configuration - HARDCODED
 const config = {
-    token: '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',
+    token: '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',
     username: 'enesgzdk',
     repo: 'plan',
     path: 'places.json'
@@ -613,3 +613,4 @@ function showError(msg) {
     errorMessage.innerHTML = msg;
     errorMessage.classList.remove('hidden');
 }
+
