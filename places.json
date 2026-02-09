@@ -43,6 +43,12 @@
       "name": "Birleşik Krallık",
       "priority": 3,
       "dateAdded": "2026-02-09T01:22:29.577Z"
+    },
+    {
+      "code": "NO",
+      "name": "Norveç",
+      "priority": 1,
+      "dateAdded": "2026-02-09T14:00:45.428Z"
     }
   ]
 }
