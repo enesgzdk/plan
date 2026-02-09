@@ -270,9 +270,9 @@ function populateCountrySelect() {
 }
 
 function isConfigured() {
-    return config.token !== 'ghp_ZNUzVW7pg7QQ'+'no2roKjokdDf3cW9Ly05lsZ3' &&
-        config.username !== 'enesgzdk' &&
-        config.repo !== 'plan';
+    return config.token !== 'YOUR_GITHUB_TOKEN_HERE' &&
+        config.username !== 'YOUR_USERNAME_HERE' &&
+        config.repo !== 'YOUR_REPO_NAME_HERE';
 }
 
 function initMap() {
@@ -613,5 +613,6 @@ function showError(msg) {
     errorMessage.innerHTML = msg;
     errorMessage.classList.remove('hidden');
 }
+
 
 
