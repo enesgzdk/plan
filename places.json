@@ -31,6 +31,12 @@
       "name": "Mısır",
       "priority": 1,
       "dateAdded": "2026-02-09T01:20:37.835Z"
+    },
+    {
+      "code": "FR",
+      "name": "Fransa",
+      "priority": 1,
+      "dateAdded": "2026-02-09T01:22:01.304Z"
     }
   ]
 }
