@@ -301,7 +301,16 @@ function initMap() {
 function initMapInstance(mapEl) {
     // Collect selected regions
     const selected = getSelectedRegions();
+
+    // Clean up existing instance properly
+    if (mapInstance && typeof mapInstance.destroy === 'function') {
+        try {
+            mapInstance.destroy();
+        } catch (e) { console.warn('Map destroy failed', e); }
+    }
+
     mapEl.innerHTML = '';
+    mapInstance = null;
 
     try {
         mapInstance = new jsVectorMap({
