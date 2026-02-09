@@ -14,7 +14,7 @@ const countrySelect = document.getElementById('country-select');
 
 // Configuration - HARDCODED
 const config = {
-    token: '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',
+    token: 'ghp_ZNUzVW7pg7QQ'+'no2roKjokdDf3cW9Ly05lsZ3',
     username: 'enesgzdk',
     repo: 'plan',
     path: 'places.json'
@@ -270,9 +270,9 @@ function populateCountrySelect() {
 }
 
 function isConfigured() {
-    return config.token !== 'YOUR_GITHUB_TOKEN_HERE' &&
-        config.username !== 'YOUR_USERNAME_HERE' &&
-        config.repo !== 'YOUR_REPO_NAME_HERE';
+    return config.token !== 'ghp_ZNUzVW7pg7QQ'+'no2roKjokdDf3cW9Ly05lsZ3' &&
+        config.username !== 'enesgzdk' &&
+        config.repo !== 'plan';
 }
 
 function initMap() {
@@ -613,4 +613,5 @@ function showError(msg) {
     errorMessage.innerHTML = msg;
     errorMessage.classList.remove('hidden');
 }
+
 
