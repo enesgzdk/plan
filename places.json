@@ -37,6 +37,12 @@
       "name": "Birleşik Krallık",
       "priority": 3,
       "dateAdded": "2026-02-09T00:57:55.393Z"
+    },
+    {
+      "code": "US",
+      "name": "Amerika Birleşik Devletleri",
+      "priority": 3,
+      "dateAdded": "2026-02-09T00:58:07.544Z"
     }
   ]
 }
