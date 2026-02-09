@@ -49,6 +49,12 @@
       "name": "Norveç",
       "priority": 1,
       "dateAdded": "2026-02-09T14:00:45.428Z"
+    },
+    {
+      "code": "IT",
+      "name": "İtalya",
+      "priority": 1,
+      "dateAdded": "2026-02-09T14:01:03.260Z"
     }
   ]
 }
