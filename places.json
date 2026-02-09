@@ -43,6 +43,12 @@
       "name": "Amerika Birleşik Devletleri",
       "priority": 3,
       "dateAdded": "2026-02-09T00:58:07.544Z"
+    },
+    {
+      "code": "US",
+      "name": "Amerika Birleşik Devletleri",
+      "priority": 1,
+      "dateAdded": "2026-02-09T00:58:16.608Z"
     }
   ]
 }
