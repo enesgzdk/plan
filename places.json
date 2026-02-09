@@ -31,6 +31,12 @@
       "name": "Benin",
       "priority": 5,
       "dateAdded": "2026-02-09T00:56:33.707Z"
+    },
+    {
+      "code": "GB",
+      "name": "Birleşik Krallık",
+      "priority": 3,
+      "dateAdded": "2026-02-09T00:57:55.393Z"
     }
   ]
 }
