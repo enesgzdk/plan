@@ -19,6 +19,12 @@
       "name": "Amerika Birleşik Devletleri",
       "priority": 3,
       "dateAdded": "2026-02-09T01:13:59.618Z"
+    },
+    {
+      "code": "EG",
+      "name": "Mısır",
+      "priority": 1,
+      "dateAdded": "2026-02-09T01:20:37.835Z"
     }
   ]
 }
