@@ -13,6 +13,12 @@
       "name": "Hollanda",
       "priority": 1,
       "dateAdded": "2026-02-09T01:07:37.137Z"
+    },
+    {
+      "code": "US",
+      "name": "Amerika Birleşik Devletleri",
+      "priority": 4,
+      "dateAdded": "2026-02-09T01:08:04.279Z"
     }
   ]
 }
